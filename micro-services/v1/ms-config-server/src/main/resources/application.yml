@@ -1,0 +1,27 @@
+spring:
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:///C://Users/ms/Desktop/micro-services/sample-config
+  profiles:
+    active: native
+    
+#       git
+ #        uri: https://github.com/anilallewar/sample-config
+# While in development mode, you can configure the config server to pick up configuration files from
+# the file system
+#                 git
+#                  uri: https://github.com/anilallewar/sample-config
+#LOCAL
+#        native:
+#          search-locations: file:///C://Users/msDesktop/micro-services/sample-config
+#   profiles:
+#     active: native
+#  LINUX            search-locations: file://user-home/ms/desktop/sample-config
+#  WINDOWS          search-locations: file:///C:/Users/ms/desktop/sample-config
+# Defines the port where the config server is running so that rest of the services can pick up 
+# their external configurations
+server:
+  port: 8888
+  
