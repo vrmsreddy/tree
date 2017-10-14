@@ -1,0 +1,37 @@
+spring:
+  metrics:
+    atlas:
+      uri: http://127.0.0.1:7101/api/v1/publish
+      enabled: true
+      step: PT10S
+    prometheus:
+      enabled: true
+    graphite:
+      enabled: true
+      host: 127.0.0.1
+      port: 9090
+    influx:
+      enabled: true
+      uri: http://localhost:8086/write
+      db: mydb
+      step: PT1S
+      
+security:
+  basic:
+    enabled: false
+management:
+  security: 
+    enabled: false
+  address: localhost
+  port: 8081
+  context-path: /manage
+endpoints: 
+   sensitive: false
+   actuator:
+    enabled: true
+   prometheus:
+       enabled: true
+       
+logging:
+  level:
+    ROOT: INFO
