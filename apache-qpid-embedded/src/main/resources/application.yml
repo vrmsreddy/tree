@@ -1,0 +1,18 @@
+server:
+  port: 8000
+management:
+  security:
+    enabled: false
+logging:
+  level:
+    ROOT: INFO
+qpid:
+  embedded:
+    bindingAddress: 127.0.0.1
+    port: 5672
+    management:
+      port: 8085
+      vhost: default
+      user:
+        name: guest
+        password: guest
