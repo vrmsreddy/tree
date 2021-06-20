@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb
+    platform: h2
+    continue-on-error: true
+  jpa:
+    hibernate:
+      ddl-auto: none
+      jdbc:
+        batch_size: 200
+        batch_versioned_data: true
+  h2:
+   console:
+    enabled: true
+    path: /console
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false

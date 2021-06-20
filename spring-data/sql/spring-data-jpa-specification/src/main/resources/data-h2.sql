@@ -1,0 +1,12 @@
+insert into ADDRESS (city) values ('Austin');
+insert into ADDRESS (city) values ('Dallas');
+insert into ADDRESS (city) values ('Los Angeles');
+insert into ADDRESS (city) values ('New York');
+insert into ADDRESS (city) values ('Orlando');
+insert into ADDRESS (city) values ('San Francisco');
+insert into PERSON (first_name, last_name, birth_date, address_id) values ('Richard', 'Sun','2000-01-01 12:30:00',1);
+insert into PERSON (first_name, last_name, birth_date, address_id) values ('Richard_1', 'Sun','2000-01-01 13:30:00',2);
+insert into PERSON (first_name, last_name, birth_date, address_id) values ('Richard_2', 'Sun','2000-01-01 14:30:00',3);
+insert into PERSON (first_name, last_name, birth_date, address_id) values ('Richard_3', 'Sun','2000-01-01 15:30:00',4);
+insert into PERSON (first_name, last_name, birth_date, address_id) values ('Richard_4', 'Sun','2000-01-01 16:30:00',5);
+insert into PERSON (first_name, last_name, birth_date, address_id) values ('Richard_5', 'Sun','2000-01-01 17:30:00',6);
