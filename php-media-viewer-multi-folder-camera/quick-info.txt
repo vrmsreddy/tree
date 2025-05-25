@@ -1,0 +1,1 @@
+just put index.php in /htdocs and make /media folder and each camera push jpa video to htdocs/media/ground 
