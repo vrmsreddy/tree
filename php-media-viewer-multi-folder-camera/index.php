@@ -152,6 +152,7 @@ $currentFiles = array_slice($files, $start, $perPage);
     <div class="top-row">
         <form method="get">
             <select name="folder" onchange="this.form.submit()">
+                <option value="" disabled selected>Select Camera</option>
                 <?php foreach ($folders as $folder): ?>
                     <option value="<?= htmlspecialchars($folder) ?>" <?= $folder === $selected ? 'selected' : '' ?>><?= htmlspecialchars($folder) ?></option>
                 <?php endforeach; ?>
